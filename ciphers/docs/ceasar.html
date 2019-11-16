@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <title>Style Guide</title>
+</head>
+
+
+<div class="menu">
+     <nav>
+            <a href="index.html">HOME</a><br>
+            <a href="atbash-cipher.html">ATBASH</a><br>
+            <a href="ceasar.html">CEASAR SHIFT</a><br>
+            <a href="vigenere.html">VIGENERE</a><br>
+            <a href="design.html">DESIGN</a><br>
+        </nav>
+</div>
+       <div class="menu-button">
+  <div class="line-1"></div>
+  <div class="line-2"></div>
+  <div class="line-3"></div>
+</div>
+<body class="cipher-body">
+
+
+
+
+
+    <main class="cipher-main">
+
+        <section>
+
+     <header>
+            <h1 class="cipher-header">CEASAR SHIFT</h1>
+            <p class="cipher-p">The Ceasar Cipher is the best known classical cipher where the plaintext letter is replaced with a different one a fixed number of places down the alphabet. Enter a number to shift the letters and a message to see what happens.</p>
+        </header>
+                         <article id="key-text-area"> <p>Select a Number</p><select id="shift-num">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+                             </select></article>
+            <article id="second"><textarea  autofocus id="message" placeholder="Enter your message"></textarea><br>
+
+                <button type="button" onClick="cEncode()" id="encodeBtn">Encode</button>
+                <p class="output-text">This is your encoded message:</p>
+                <p id="c-output" class="output-p"></p>
+            </article>
+
+
+
+            <article id="third"><textarea id="text-output-area" autofocus class="decode-message" placeholder="Enter your encoded message"></textarea><br>
+
+                <button type="button" onClick="cDecode()" id="decodeBtn">Decode</button>
+
+                <p class="output-text">This is your decoded message:</p>
+                <p id="c-decoded-output" class="output-p"></p>
+
+            </article>
+            <article id="first">
+
+
+                <hr>
+                <p>The Caesar Cipher, also known as a shift cipher, is one of the oldest and simplest forms of encrypting a message. It is one type of substitution cipher where each letter in the plaintext is subsituted with another letter a certain number of letters shifted up or down in the alphabet. For example, if the letter in the plaintext is 'A'and the shift number is 4, the letter would move four places down the alphabet nad the result of the encoded message would be 'D'.</p>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>

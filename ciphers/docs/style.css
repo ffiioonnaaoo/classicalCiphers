@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'Masonic-Cipher-Symbols';
+    src: url('Masonic-Cipher-Symbols.ttf.woff') format('woff'),
+    url('Masonic-Cipher-Symbols.ttf.svg#Masonic-Cipher-Symbols') format('svg'),
+    url('Masonic-Cipher-Symbols.ttf.eot'),
+    url('Masonic-Cipher-Symbols.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    /*border: solid pink 1px;*/
+}
+
+
+body {
+    background-color: #B6D5FD;
+}
+
+/*nav style*/
+
+.menu-button {
+    background: #134E7E;
+    width: 100%;
+    position: fixed;
+
+    cursor: pointer;
+    transition: all linear 0.3s;
+    padding: 4px;
+}
+
+.menu-button.active {
+    background: #134E7E;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    width: 50px;
+    background: #9BB9F2;
+    height: 8px;
+    margin: 4px auto;
+    border-radius: 2px;
+    transition: all linear 0.3s;
+}
+
+
+.line-1.active {
+
+    transform: translate(0px, 12px) rotate(45deg);
+}
+
+.line-2.active {
+    opacity: 0;
+}
+
+.line-3.active {
+
+    transform: translate(0px, -12px) rotate(-45deg);
+}
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #134E7E;
+    height: 100vh;
+    margin-top: -1000px;
+    font-size: 2rem;
+    top: 45px;
+
+}
+
+nav {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #B6D5FD;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    transition: 1s ease forwards;
+}
+
+nav a:hover {
+    color: #F1B3EF;
+}
+
+/*animation for the menu to slide down*/
+
+.move-down {
+    animation: move-down 0.6s ease forwards;
+}
+
+
+@keyframes move-down {
+    0% {
+        margin-top: -1000px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+
+/*nav stying ends*/
+
+#homepage-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em 0 0 0;
+    height: 100%;
+    background-color: #B6D5FD;
+}
+
+#homepage-header {
+
+    font-size: 5em;
+    color: #134E7E;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home-p {
+
+    color: #9BB9F2;
+    font-family: 'Masonic-Cipher-Symbols';
+}
+
+.home-p-pink {
+
+
+    color: #F1B3EF;
+    font-family: 'Masonic-Cipher-Symbols';
+}
+
+.home-hr {
+    width: 60%;
+    text-align: center;
+}
+
+/*cipher page layout begins*/
+
+#second,
+#third {
+
+    text-align: center;
+}
+
+.cipher-body h1 {
+    font-size: 2.5em;
+    padding: 3em 0 0.5em 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+    text-align: justify;
+    color: #134E7E;
+    padding-bottom: 1.5em;
+
+}
+
+p {
+    font-family: 'Bellefair', serif;
+    font-size: 1.5em;
+    color: #134E7E;
+
+}
+
+textarea {
+    border: solid 1px #134E7E;
+    border-radius: 25px;
+    font-size: 1.3em;
+    resize: none;
+    font-family: 'Bellefair', serif;
+}
+
+#vig-code,
+#vig-message,
+#text-output-area,
+#message {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+}
+
+#vig-output,
+#vig-decoded-output,
+#c-output,
+#c-decoded-output,
+ {
+    font-size: 2em;
+}
+
+#vig-keyword {
+
+    width: 80%;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+#key-text-area {
+    text-align: center;
+}
+
+.output-text {
+    margin: 20px 0 10px 0;
+    font-family: 'Bellefair',
+    serif;
+}
+
+.output-p {
+    margin: 20px 0 10px 0;
+    font-size: 1.5em;
+    font-family: 'Bellefair', serif;
+}
+
+button {
+
+    font-size: 1em;
+    width: 100px;
+    background-color: #F1B3EF;
+    border-radius: 37px;
+    color: #117271;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #9BB9F2;
+}
+
+select {
+
+    border-radius: 25px;
+    width: 170px;
+
+    border: 0;
+    height: 28px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #9BB9F2;
+    margin: 1em 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 10px 0 10px;
+    text-align: justify;
+}
+
+header {
+    1.5 grid-area: hd;
+
+}
+
+header h1 {
+    text-align: center;
+}
+
+/*STYLE GUIDE STARTS*/
+
+.design-h1 {
+
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    color: #134E7E;
+}
+
+h2 {
+    color: #134E7E;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    padding: 2em 0 0.5em 0;
+    text-align: left;
+
+}
+
+#design-body p,
+h1 {
+    text-align: left;
+    padding: 0.2;
+}
+
+#design-body header h1 {
+    font-size: 2.5em;
+    padding: 2em 0 0.5em 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#design-section {
+    text-align: left;
+}
+
+#design-article {}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.dark-blue {
+    background-color: #134E7E;
+    border: 1px solid #134E7E;
+    color: #B6D5FD
+}
+
+.pale-blue {
+    background-color: #B6D5FD;
+    border: 1px solid #134E7E;
+    color: #134E7E;
+}
+
+.minor-blue {
+    background-color: #9BB9F2;
+    border: 1px solid #134E7E;
+    color: #134E7E;
+
+}
+
+.pink {
+    background-color: #F1B3EF;
+    border: 1px solid #134E7E;
+    color: #134E7E;
+}
+
+.colour-container {
+    display: flex;
+}
+ul li{
+      color: #134E7E;
+     font-family: 'Bellefair', serif;
+    font-size: 1.5em;
+    list-style:none;
+}
+/*STYLE GUIDE ENDS*/
+
+@media (min-width:641px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(4fr, 1fr);
+        grid-template-areas: "hd hd hd hd"". kt kt ." "sc sc th th" "fr fr fr fr";
+        padding: 0 20px 0 20px;
+    }
+
+    header {
+
+        grid-area: hd;
+    }
+
+    #first {
+        grid-area: fr;
+
+    }
+    #second {
+        grid-area: sc;
+
+    }
+    #third {
+        grid-area: th;
+    }
+
+    #key-text-area {
+        grid-area: kt;
+    }
+
+    #design-main {
+        display: grid;
+        grid-template-columns: repeat(2fr, 1fr);
+        grid-template-areas: "dh dh" "dt dv" "dt dv" "dt dv" "dt dv";
+
+    }
+    #design-header {
+        grid-area: dh;
+        text-align: center;
+        padding-top:2em;
+    }
+    #desgin-visual {
+        grid-area: dv;
+
+    }
+    #desgin-typography {
+        grid-area: dt;
+    }
+}
+
+
+/*DESKTOP STYLING*/
+
+@media (min-width:1025px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: ".hd hd hd hd." ".sc sc th th." ". . kt kt . ."". fr fr fr fr .";
+        grid-gap: 0;
+    }
+
+    #homepage-header {
+
+        font-size: 8em;
+
+    }
+
+}
+
+/*cipher page layout ends*/

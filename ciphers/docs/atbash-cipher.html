@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <title>Atbash Cipher</title>
+</head>
+
+<body class="cipher-body">
+    <div class="menu">
+        <nav>
+            <a href="index.html">HOME</a><br>
+            <a href="atbash-cipher.html">ATBASH</a><br>
+            <a href="ceasar.html">CEASAR SHIFT</a><br>
+            <a href="vigenere.html">VIGENERE</a><br>
+            <a href="design.html">DESIGN</a><br>
+        </nav>
+    </div>
+
+    <div class="menu-button">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+    </div>
+
+    <main class="cipher-main">
+        <section>
+            <header>
+                <h1 class="cipher-header">ATBASH CIPHER</h1>
+                <p class="cipher-p">The Atbash cipher is a simple type of a substitution cipher where the letters of the alphabet are reversed. In otherwords, all 'A's are replaced with 'Z's. </p>
+            </header>
+            <article id="second"><textarea autofocus id="message" placeholder="Enter your message"></textarea><br>
+
+                <button type="button" onClick="encodeAtbash()" id="encodeBtn">Encode</button>
+                <p class="output-text">This is your encoded message:</p>
+                <p id="atbash-output" class="output-p"></p>
+            </article>
+            <article id="third"><textarea id="text-output-area" autofocus class="decode-message" placeholder="Enter your encoded message"></textarea><br>
+                <button type="button" onClick="decodeAtbash()" id="decodeBtn">Decode</button>
+                <p class="output-text">This is your decoded message:</p>
+                <p id="atbash-decoded-output" class="output-p"></p>
+            </article>
+            <article id="first">
+                <hr>
+
+                <p>The Atbash was originally used with the Hebrew alphabet and the name comes from the first, last, second, and second to last Hebrew letters (Aleph-Tav-Beth-Shin). This cipher is considered not very secure as it is very easy to break as patterns in the language are easy to establish based on word lengths and the most frequency of certain letters in a given language. </p>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>

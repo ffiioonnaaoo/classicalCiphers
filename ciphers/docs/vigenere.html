@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <title>Vigenère Cipher </title>
+</head>
+
+<body class="cipher-body">
+
+    <div class="menu">
+            <nav>
+            <a href="index.html">HOME</a><br>
+            <a href="atbash-cipher.html">ATBASH</a><br>
+            <a href="ceasar.html">CEASAR SHIFT</a><br>
+            <a href="vigenere.html">VIGENERE</a><br>
+            <a href="design.html">DESIGN</a><br>
+        </nav>
+    </div>
+
+    <div class="menu-button">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+    </div>
+
+
+
+    <main class="cipher-main">
+
+        <section>
+            <header>
+                <h1 class="cipher-header">VIGENERE CIPHER</h1>
+                <p class="cipher-p">The Vigenère cipher is a polyalphabetic substitution cipher that works by using a series of Ceasar Ciphers. Using a keyword, a message can be ecoded with each letter shifting depending on the keyword. </p>
+            </header>
+            <article id="key-text-area">
+                <p>Keyword</p><textarea id="vig-keyword" placeholder="Enter keyword"></textarea></article>
+            <article id="second"><textarea autofocus id="vig-message" placeholder="Enter your message"></textarea><br>
+
+                <button type="button" onClick="encodeVigenere()" id="encodeBtn">Encode</button>
+                <p class="output-text">This is your encoded message:</p>
+                <p id="vig-output" class="output-p"></p>
+            </article>
+
+
+
+            <article id="third"><textarea id="vig-code" autofocus class="decode-message" placeholder="Enter your encoded message"></textarea><br>
+
+                <button type="button" onClick="decodeVigenere()" id="decodeBtn">Decode</button>
+
+                <p class="output-text">This is your decoded message:</p>
+                <p id="vig-decoded-output" class="output-p"></p>
+
+            </article>
+            <article id="first">
+                <hr>
+                <p>
+                    The Vigenère cipher can be decoded and encoded using Vigenère table which shows a rows of the alphabet which are shifted one accoss as the table goes down.To encrypt a message a keyword is first selected and repeated so that it is the same length as the plaintext. For each plaintext letter, you find a letter on the left hand side of the table and find the correspinding letter from the key alphabet where the two intersect is the encoded message.</p>
+
+            </article>
+
+
+
+        </section>
+
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
